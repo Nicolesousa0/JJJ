@@ -1,0 +1,24 @@
+limite = 3
+tentativa = 1
+
+try:
+    while tentativa <= limite:
+        senha = input("Digite a senha correta (de 6 dígitos): ")
+        
+        if senha == "121224":
+            print("Senha correta!!")
+            break
+            
+        elif len(senha) != 6:
+            print("Quantidade inválida")
+            
+        else:
+            print("Senha incorreta.")
+            
+        tentativa = tentativa + 1
+
+    if tentativa > limite:
+        print("Número máximo de tentativas atingido.")
+
+except ValueError:
+    print("Digite a senha corretamente!")
