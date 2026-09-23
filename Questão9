@@ -1,0 +1,16 @@
+try:
+    aluno = float(input("Qual a média do aluno? "))
+
+    if aluno < 0:
+       print("Média inexistente!")
+    elif aluno < 6:
+      print("Aluno de baixo desempenho.")
+    elif 6 <= aluno <= 8:
+      print("Aluno de bom desempenho!")
+    elif 8 < aluno <= 10:
+       print("Aluno de excelente desempenho!!!")
+    else:
+       print("Erro! coloque uma média válida (0 a 10).")
+
+except ValueError:
+ print("Insira as informações corretas.")
