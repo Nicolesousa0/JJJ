@@ -1,0 +1,9 @@
+cpf = (input("Digite o seu cpf: "))
+cpfL = cpf.replace(".", "").replace("-", "")
+try:
+    if len(cpfL) != 11:
+     print("CPF inválido!!!!")
+    else:
+     print("Acesso liberado!")
+except ValueError:
+  print("Digite as informações corretamente jegue!")
