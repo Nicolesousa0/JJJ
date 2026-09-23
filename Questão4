@@ -1,0 +1,9 @@
+valor = input("Digite o valor da primeira compra: ")    
+valor2 = input("Digite o valor da segunda compra: ")
+try:
+    v1 = float(valor.strip().replace(" ", ""))
+    v2 = float(valor2.strip().replace(" ", ""))
+    soma = v1 + v2
+    print(soma)
+except ValueError:
+     print("Digite só número consagrado!!!!")
