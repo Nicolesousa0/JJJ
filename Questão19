@@ -1,0 +1,20 @@
+def avaliacao(idade, renda, situacao):
+    if situacao == "Irregular" or situacao == "Nome sujo":
+        return "Cadastro bloqueado."
+    elif idade >= 18 and renda >= 1900:
+        return "Crédito aprovado!"
+    else:
+        return "Perfil inelegível."
+
+try:
+
+    sit = str(input("Informe sua situação cadastral (Regular/Irregular/Nome sujo): "))
+    id_uso = int(input("Informe sua idade: "))
+    ren = float(input("Informe sua renda: "))
+    
+    resultado = avaliacao(id_uso, ren, sit)
+    
+    print(f"Resultado da análise: {resultado}")
+
+except ValueError:
+    print("Preencha as informações corretamente.")
