@@ -1,0 +1,15 @@
+try:
+       temperatura = float(input("Insira a primeira temperatura: "))
+       temperatura2 = float(input("Insira a segunda temperatura: "))
+
+       if temperatura > temperatura2:
+        print(f"A primeira temperatura é maior, com {temperatura}")
+       elif temperatura2 > temperatura:
+        print(f"A segunda temperatura é maior, com {temperatura2}")
+       elif temperatura == temperatura2:
+          print("Ambas temperaturas são iguais.")
+       else:
+          print("Erro! Coloque dados válidos")
+    
+except ValueError:
+    print("Insira os dados corretos.")
