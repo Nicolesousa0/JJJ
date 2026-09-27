@@ -1,0 +1,10 @@
+try:
+    valor1 = float(input("Insira o primeiro valor da compra: "))
+    valor2 = float(input("Insira o segundo valor da compra: "))
+
+    soma = valor1 + valor2
+
+    print(f"O valor total da compra é {soma}")
+
+except ValueError:
+    print("Insira as informações corretamente!!!")
