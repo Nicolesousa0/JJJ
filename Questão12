@@ -1,0 +1,19 @@
+aluno = [] 
+
+try:
+    while True:
+        nome = input("Digite o nome do aluno: ")
+
+        if not nome.strip():  
+            print("Preencha o campo.")
+        elif any(char.isdigit() for char in nome):
+            print("Insira apenas letras")
+        elif nome in aluno:
+            print(f"{nome} já está cadastrado.")
+        
+        else:
+            aluno.append(nome)
+            print(f"{nome} cadastrado!")
+
+except ValueError:
+    print("Error! coloque informações válidas")
