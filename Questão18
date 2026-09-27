@@ -1,0 +1,14 @@
+try:
+    compra = float(input("Insira o valor da compra: "))
+
+    desconto = compra * 0.1
+    v_t = compra + desconto 
+
+    if compra <=0:
+     print("Error!! Valor inválido")   
+    elif compra <=100:
+        print("Descontos são apenas para compras acima de R$100,00 ")
+    elif compra > 100:
+        print(f"Valor com desconto de 10% aplicado: {v_t}")
+except ValueError:
+    print("Insira os dados corretamente!!")
