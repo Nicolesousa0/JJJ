@@ -1,0 +1,17 @@
+try:
+    idade = int(input("Digite a idade do aluno: "))
+    if idade <= 0:
+        print("Erro! digite sua real idade.")
+    else:
+        curso = input("Digite o curso do querido: ")
+        if curso.strip() == "":
+            print("Erro! preencha o espaço.")
+        else:
+            ano = int(input("Digite o ano: "))
+            if ano < 2022 or ano > 2026:
+                print("Ano inválido!")
+            else:
+                print("Cadastro concluído com sucesso!")
+
+except ValueError:
+    print("Preencha as informações corretamente!")
