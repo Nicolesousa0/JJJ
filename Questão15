@@ -1,0 +1,23 @@
+def media(nota1, nota2):
+    media2 = (nota1 + nota2) / 2
+    return media2
+
+try:
+    nota1 = float(input("Qual a primeira nota? "))
+    nota2 = float(input("Qual a segunda nota? "))
+    
+    if 0 <= nota1 <= 10 and 0 <= nota2 <= 10:
+        
+        resul = media(nota1, nota2)
+        print(f"A média é: {resul}")
+        
+        if 0 <= resul <= 6:
+            print("Situação do aluno: Reprovado.")
+        elif 6 < resul <= 10:
+            print("Situação do aluno: Aprovado.")
+            
+    else:
+        print("Error!!! Digite apenas notas de 0 a 10.")
+
+except ValueError:
+    print("Digite os dados corretamente!")
